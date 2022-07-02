@@ -1,8 +1,5 @@
 {
   "dependencies": {
     "react-router-dom": "^6.3.0"
-  },
-  "scripts":{
-    "save": "git add -A && git commit -m 'update'"
   }
 }

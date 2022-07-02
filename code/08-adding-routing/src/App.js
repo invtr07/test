@@ -5,16 +5,21 @@ import NewMeetupPage from './pages/NewMeetup';
 import FavoritesPage from './pages/Favorites';
 
 function App() {
+  //localhost: 3000
+  //my-page.com/
+
   return (
     <div>
       <Switch>
-        <Route path='/' exact>
+        <Route path='/' exact={true}>
           <AllMeetupsPage />
         </Route>
-        <Route path='/new-meetup'>
+
+        <Route path='/new-meetup' exact={true}>
           <NewMeetupPage />
         </Route>
-        <Route path='/favorites'>
+
+        <Route path='/favorites' exact={true}>
           <FavoritesPage />
         </Route>
       </Switch>
